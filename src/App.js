@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container';
 import Catalog from './components/Catalog';
 import PostData from './components/PostData';
+import Auth from './components/Auth';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     </Navbar>
     {currentSection === 'catalog' && <Catalog />}
     {currentSection === 'postProduct' && <PostData />}
+    <Auth />
     {console.log(currentSection)}
   </div> 
   );

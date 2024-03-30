@@ -10,12 +10,12 @@ function PostData(){
     const onChange = e => setFormData({...formData, [e.target.name]: e.target.value}) 
     const onSubmit = e => {
         e.preventDefault();
-        axios.post(`https://6558eca7e93ca47020a9e559.mockapi.io/products`, {
+        axios.post(`http://127.0.0.1:8000/games/`, {
             title, price
         })
     };
     return(
-        <div>
+        <div className="wrapper p-30">
             <h1 className='content p-50'>Форма добавления нового сервиса в каталог</h1>
             <form onSubmit={e => onSubmit(e)}>
                 <div className='form-group'>

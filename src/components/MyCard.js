@@ -6,7 +6,7 @@ function MyCard(props) {
     <Card style={{ width: '18rem' }} className='card'>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title>{props.name}</Card.Title>
         <Card.Title>{props.price}</Card.Title>
       </Card.Body>
     </Card>

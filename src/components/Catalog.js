@@ -15,11 +15,11 @@ function Cataog(){
     console.log("Состояние хранилища Redux:", products);
     
     return(
-        <div className="d-flex, p-3">
+        <div className="wrapper clear mt-100">
             {products.length === 0 ? (
             <p>Loading...</p>
             ) : (
-            <Row md={40} className="g-4">
+            <Row md={40} className="g-5 p-5">
                 {products.map((product, id) => (
                     <Col key={id}>
                         <MyCard {...product} />

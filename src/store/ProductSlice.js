@@ -16,7 +16,7 @@ export const loadProducts = () => async (dispatch) => {
     // } catch (error) {
     // }
 
-    const response = await axios.get(`https://6558eca7e93ca47020a9e559.mockapi.io/products/`);
+    const response = await axios.get(`${IP4}games`);
     // console.log(response.data);
     dispatch(setProducts(response.data));
 }
@@ -29,7 +29,7 @@ export const delProducts = (id) => async (dispatch) => {
     //     'Authorization': `Bearer ${localStorage.getItem('accessToken')}`,
     //     },
     // };
-        const response = await axios.delete(`${IP4}products/${id}`);
+        const response = await axios.delete(`${IP4}games/${id}`);
         dispatch(setProducts(response.data.data)); 
     // } catch (error) {
     // }
